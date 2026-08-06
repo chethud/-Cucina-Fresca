@@ -1,0 +1,18 @@
+{
+  "name": "cucina-fresca-mysuru",
+  "version": "1.0.0",
+  "description": "Cucina Fresca - Authentic Italian Dining & QR Table Ordering Web App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "cucina-fresca",
+    "italian-dining",
+    "qr-order",
+    "mysuru"
+  ],
+  "author": "Antigravity AI",
+  "license": "ISC"
+}
