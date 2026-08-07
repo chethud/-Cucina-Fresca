@@ -12,17 +12,21 @@
 <body class="min-h-screen bg-background text-foreground antialiased selection:bg-accent selection:text-accent-foreground">
   <div class="flex min-h-screen flex-col">
     <!-- Header Navigation -->
-    <header class="fixed inset-x-0 top-0 z-50 py-4 text-[var(--cream)] bg-[var(--espresso)] border-b border-[var(--cream)]/15 shadow-xl backdrop-blur-md">
-      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <a href="../" class="flex items-center gap-3">
-          <span class="font-display text-2xl font-bold tracking-tight text-foreground">Cucina Fresca</span>
+    <header class="fixed inset-x-0 top-0 z-50 py-5 text-[var(--cream)] bg-[var(--espresso)] border-b border-[var(--cream)]/15 shadow-xl backdrop-blur-md">
+      <div class="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 lg:px-8">
+        <a href="../" class="flex min-w-0 items-center gap-3">
+          <img src="../assets/cucina_logo.png" alt="Cucina Fresca Logo" width="48" height="48" style="width: 48px; height: 48px; min-width: 48px; min-height: 48px;" class="shrink-0 rounded-full object-contain bg-white/95 p-0.5 shadow-md transition-transform hover:scale-105">
+          <span class="min-w-0">
+            <span class="block truncate font-display text-lg leading-none tracking-wide text-[var(--cream)]">Cucina Fresca</span>
+            <span class="eyebrow block text-accent font-medium">Italian Joint &middot; Mysuru</span>
+          </span>
         </a>
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="../" class="transition-colors hover:text-primary">Home</a>
-          <a href="../about/" class="transition-colors hover:text-primary">About</a>
-          <a href="../menu/" class="transition-colors hover:text-primary">Menu</a>
-          <a href="../gallery/" class="transition-colors hover:text-primary">Gallery</a>
-          <a href="../contact/" class="transition-colors hover:text-primary font-semibold text-primary">Contact</a>
+        <nav class="hidden items-center gap-8 lg:flex">
+          <a href="../" class="relative text-sm tracking-wide transition-colors hover:text-accent opacity-85">Home</a>
+          <a href="../about/" class="relative text-sm tracking-wide transition-colors hover:text-accent opacity-85">About</a>
+          <a href="../menu/" class="relative text-sm tracking-wide transition-colors hover:text-accent opacity-85">Menu</a>
+          <a href="../gallery/" class="relative text-sm tracking-wide transition-colors hover:text-accent opacity-85">Gallery</a>
+          <a href="./" class="relative text-sm tracking-wide transition-colors hover:text-accent text-accent font-semibold">Contact</a>
         </nav>
       </div>
     </header>
