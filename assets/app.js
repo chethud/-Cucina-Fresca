@@ -314,16 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 6. LOVABLE BADGE CLOSE HANDLER ---
-  const badgeCloseBtn = document.getElementById('lovable-badge-close');
-  if (badgeCloseBtn) {
-    badgeCloseBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const badge = document.getElementById('lovable-badge');
-      if (badge) badge.remove();
-    });
-  }
-
   // --- 7. DYNAMIC SCROLL HEADER BACKGROUND ---
   const header = document.querySelector('header');
   if (header && header.classList.contains('fixed')) {
